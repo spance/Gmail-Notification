@@ -1,0 +1,5 @@
+2014-09-18 13:24:45,276 GNoti.config            [24848]: ERROR   Error in gnoti.conf
+Traceback (most recent call last):
+  File "D:\Workspace\Cloud-app\gnoti\config.py", line 52, in init_and_validate
+    raise RuntimeError(state)
+RuntimeError: Not found app_client_secret.json
