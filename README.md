@@ -13,7 +13,7 @@
 # 适用场景
 
 - 不想公开Gmail密码给第三方的
-- 不能/不便持续Gmail在线的
+- 不便持续Gmail在线的
 - 不想使用邮件客户端残留邮件副本
 - 想要更及时的通知
 - 想要更爽的自定义通知
@@ -31,13 +31,13 @@ Google oauth接口是安全、可靠的，程序通过Google接口获得用户�
 
 考虑到存储安全，程序不会读取和存储任何邮件内容包括标题，仅通过邮件id做识别和分析。
 
-考虑到传输安全，发送的短信中不含有与邮件相关的任何内容，仅包括未读数量，并对mail地址做了遮掩。
+考虑到传输安全，短信中不含有与邮件相关的任何内容，仅包括未读数量，并对mail地址做了遮掩。
 
 如果运行程序的服务器是安全的，则整个运作逻辑都是安全和可靠的。
 
 # 运行条件
 
-1. 一个可访问Google和可运行Python程序的Linux环境
+1. 一个可访问Google和可运行Python的Linux环境
 2. 一个基于http/https的短信接口
 
 该应用是开源免费的，但所需的两个运行条件可能需要向相应的服务商购买。
@@ -54,7 +54,7 @@ Google oauth接口是安全、可靠的，程序通过Google接口获得用户�
 
 访问： https://console.developers.google.com/project
 
-开启API并创建Client Credential，然后下载json文件，命名并放置到`credentials\app_client_secret.json`
+开启API并创建Client Credential，下载json文件，命名并放置到 `credentials\app_client_secret.json`
 
 ![g_api_1](https://i.imgur.com/5QM6vlc.png)
 ![g_api_2](https://i.imgur.com/rHUBFmU.png)
